@@ -29,7 +29,7 @@ OnTick(function (myHero)
       --COMBO
       if Mix:Mode() == "Combo" then
 
-         if UniversalMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 850) then
+         if UniversalMenu.Combo.Q1:Value() and Ready(_Q) and ValidTarget(target, 850) then
                 local QPred = GetPrediction(target,UniversalQ)
                        if QPred.hitChance > (UniversalMenu.Combo.Qpred:Value() * 0.1) then
                                  CastSkillShot(_Q,QPred.castPos)
