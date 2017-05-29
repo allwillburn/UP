@@ -35,5 +35,6 @@ OnTick(function (myHero)
                        if QPred.hitChance > (UniversalMenu.Combo.Qpred:Value() * 0.1) then
                                  CastSkillShot(_Q,QPred.castPos)
                        end
-            end
+         end
+     end    
 end)
