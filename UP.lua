@@ -4,7 +4,6 @@ require("DamageLib")
 
 
 
-local UniversalQ = {delay = .5, range = 850, width = 250, speed = 1200}
 
 
 
@@ -25,7 +24,7 @@ UniversalMenu.Combo:Slider("Qpred", "Q Hit Chance", 3,0,10,1)
 
 OnTick(function (myHero)
       local target = GetCurrentTarget()
-      local UniversalQ = {delay = GetCastDelay(myHero,_Q), range = GetCastRange(myHero,_Q), width = GetCastWidth(myHero,_Q), speed = GetCastSpeed(myHero,_Q)}
+      local UniversalQ = {delay = .05, range = GetCastRange(myHero,_Q), width = 50, speed = 1000}
 
       --COMBO
       if Mix:Mode() == "Combo" then
